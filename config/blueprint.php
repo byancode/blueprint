@@ -12,9 +12,8 @@ return [
     | This value should match a PSR-4 autoload configuration value
     | within the composer.json file of your Laravel application.
     |
-    */
+     */
     'namespace' => 'App',
-
 
     /*
     |--------------------------------------------------------------------------
@@ -26,10 +25,9 @@ return [
     | the `App` namespace. However, you may configure Blueprint to use
     | your own custom namespace when generating these components.
     |
-    */
-    'models_namespace' => '',
+     */
+    'models_namespace' => 'Models',
     'controllers_namespace' => 'Http\\Controllers',
-
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +38,7 @@ return [
     | under the files under the `app` folder. However, you may configure
     | Blueprint  to save these generated component under a custom path.
     |
-    */
+     */
     'app_path' => 'app',
 
     /*
@@ -52,7 +50,7 @@ return [
     | not only serves as documentation, but also allows your IDE to
     | map to the dynamic properties used by Laravel Models.
     |
-    */
+     */
     'generate_phpdocs' => false,
 
     /*
@@ -69,12 +67,11 @@ return [
     | to 'restrict', 'no_action', or 'null' as well as inline
     | by defining your `foreign` key column with an `onDelete`.
     |
-    */
+     */
     'use_constraints' => false,
 
     'on_delete' => 'cascade',
     'on_update' => 'cascade',
-
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +83,7 @@ return [
     | this behavior if you prefer to only set required columns
     | within your model factories.
     |
-    */
+     */
     'fake_nullables' => true,
 
     /*
@@ -99,7 +96,7 @@ return [
     | readability of code and will lower maintenance cost. This will only
     | Work for projects running PHP v7.0 or higher.
     |
-    */
+     */
     'use_return_types' => false,
 
     /*
@@ -113,7 +110,7 @@ return [
     | configure Blueprint to instead set an empty `guarded` property to
     | generated "unguarded" models.
     |
-    */
+     */
 
     'use_guarded' => false,
 
@@ -128,7 +125,7 @@ return [
     | "tuple syntax" in cases where you may not use this property
     | or wish to improve static analysis.
     |
-    */
+     */
     'generate_fqcn_route' => false,
 
     /*
@@ -142,7 +139,7 @@ return [
     |
     | Your custom Generator class MUST implement the 'Blueprint\Contracts\Generator' interface.
     |
-    */
+     */
     'generators' => [
         'controller' => \Blueprint\Generators\ControllerGenerator::class,
         'factory' => \Blueprint\Generators\FactoryGenerator::class,
