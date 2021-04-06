@@ -1,5 +1,5 @@
 {
-    "name": "laravel-shift/blueprint",
+    "name": "byancode/blueprint",
     "type": "library",
     "description": "An expressive, human readable code generation tool.",
     "keywords": [
